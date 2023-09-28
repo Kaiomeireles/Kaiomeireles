@@ -73,7 +73,7 @@ void loop() {
   Serial.println(luminosityValue);
 
   delay(1000); // Aguarde um segundo antes de fazer a próxima leitura
-
+ }
 
 ## Licença
 
