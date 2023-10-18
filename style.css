@@ -156,9 +156,16 @@ figure {
 section#Fragrant {
     display: flex;
     align-items: center;
-    padding: 100px 280px;
+
     background-color: #F7F8FA;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    gap: 1rem;
 }
+
 
 
 #user {
@@ -209,7 +216,7 @@ section#user {
 #popular {
     background-color: #f7f7f7;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-wrap: wrap;
