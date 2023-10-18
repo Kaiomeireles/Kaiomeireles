@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8rem;
+
+}
+
+section#Home {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background: url(images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: 15rem 10rem;
+
+}
+
+
+.Button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+button {
+    background-color: green;
+    padding: 8px 50px;
+    font-size: 18px;
+    color: aliceblue;
+    gap: 5rem;
+    margin: 70px;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    font-size: 18px;
+}
+
+
+.homecenter {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+
+section#produto {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.top-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-products .pricecuptop {
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+
+.bottom-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bottom-products .pricecuptop {
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+.price {
+    color: green;
+    justify-content: right;
+    display: flex;
+}
+
+
+h2 {
+    font-size: 40px;
+    color: #0B254B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.titleleft .Button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 70px;
+
+}
+
+.titleleft h3 {
+    font-size: 40px;
+    font-family: initial;
+    color: #1D252C;
+    padding: 10px;
+}
+
+figure {
+    display: flex;
+    justify-content: right;
+    padding: 10px 230px;
+}
+
+
+section#Fragrant {
+    display: flex;
+    align-items: center;
+    padding: 100px 280px;
+    background-color: #F7F8FA;
+}
+
+
+#user {
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.cards {
+    width: 30%;
+    margin: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cards-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.client-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 40px;
+    font-family: initial;
+    color: #0B254B;
+    ;
+}
+
+p {
+    font-size: 14px;
+}
+
+section#user {
+    background-color: #56B2801A;
+    overflow: hidden;
+}
+
+#popular {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.hypepopular {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.name p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.price p {
+    font-size: 18px;
+    color: green;
+    margin: 10px 0;
+}
