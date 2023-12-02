@@ -37,6 +37,51 @@ Explore uma simulação interativa do projeto no Tinkercad: [ThanksHealth Simula
 
 esse é o video Explicativo do projeto ThanksHealth: [ThanksHealth Video Explicativo](https://www.youtube.com/watch?v=Wrfz7HOrob8&ab_channel=KaioMeireles)
 
+##Codigo Fonte
+
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+int potPin = A0; 
+
+void setup() {
+    lcd.begin(16, 2);
+}
+
+void loop() {
+    int potValue = analogRead(potPin);
+    
+    lcd.setCursor(0, 0);
+    lcd.print("CONSULTAS");
+
+    lcd.setCursor(0, 1);
+    lcd.print("24/12/2023");
+
+
+    if (potValue < 341) {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("CONSULTAS");
+        lcd.setCursor(0, 1);
+        lcd.print("24/01/12");
+    } else if (potValue >= 341 && potValue < 682) {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("EXAME DE SANGUE");
+        lcd.setCursor(0, 1);
+        lcd.print("TIPO A-");
+    } else {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("KAIO MEIRELES");
+        lcd.setCursor(0, 1);
+        lcd.print("MASCULINO");
+    }
+
+    delay(4000);
+}
+
+
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para melhorar este código e ajudar a aprimorar a experiência do usuário no registro de informações médicas.
